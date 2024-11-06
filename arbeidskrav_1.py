@@ -15,19 +15,19 @@ gas_passge_tax_kr_km = 0.3
 def gasolin_car():
     yearly_cost = (yearly_distance_km * gas_kr_km) + (yearly_distance_km * gas_passge_tax_kr_km) + road_tax_kr_year + insurance_gas_kr
     yearly_cost_str = str(yearly_cost)
-    print("Bensinbil koster " + yearly_cost_str + "ckr årlig")
+    print("Bensinbil koster " + yearly_cost_str + " kr årlig")
     return yearly_cost
 
 def el_car():
     yearly_cost_el = (yearly_distance_km * el_kr_kWh * el_kwh_km) + (yearly_distance_km * el_passage_tax_kr_km) + road_tax_kr_year + insurance_el_kr
     yearly_cost_str = str(yearly_cost_el)
-    print("El-bil koster " + yearly_cost_str + "ckr årlig")
+    print("El-bil koster " + yearly_cost_str + " kr årlig")
     return yearly_cost_el
 
 def gas_el_car_dif(x, y):
     dif_yearly_cost = x - y
     dif_yearly_cost_str = str(dif_yearly_cost)
-    print("Prisforskjellen på årlige utgifter mellom bensinbil og elektrisk bil er " + dif_yearly_cost_str + "ckr, i favør el.")
+    print("Prisforskjellen på årlige utgifter mellom bensinbil og elektrisk bil er " + dif_yearly_cost_str + " kr, i favør el.")
 
 #gasolin_car()
 #el_car()
